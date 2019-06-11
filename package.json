@@ -2,7 +2,7 @@
   "name": "smoothie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://morr6.github.io/smoothie",
+  "homepage": "https://morr6.github.io/smoothie/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "glamor": "^2.20.40",
