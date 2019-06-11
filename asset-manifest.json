@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/smoothie/static/css/main.26f6c2b0.chunk.css",
-    "main.js": "/smoothie/static/js/main.345ab3f1.chunk.js",
-    "main.js.map": "/smoothie/static/js/main.345ab3f1.chunk.js.map",
+    "main.css": "/smoothie/static/css/main.4b1afdcb.chunk.css",
+    "main.js": "/smoothie/static/js/main.4ea7a0cd.chunk.js",
+    "main.js.map": "/smoothie/static/js/main.4ea7a0cd.chunk.js.map",
     "runtime~main.js": "/smoothie/static/js/runtime~main.f268b67d.js",
     "runtime~main.js.map": "/smoothie/static/js/runtime~main.f268b67d.js.map",
     "static/css/2.1f156bdb.chunk.css": "/smoothie/static/css/2.1f156bdb.chunk.css",
-    "static/js/2.2b6e57ed.chunk.js": "/smoothie/static/js/2.2b6e57ed.chunk.js",
-    "static/js/2.2b6e57ed.chunk.js.map": "/smoothie/static/js/2.2b6e57ed.chunk.js.map",
+    "static/js/2.879a8241.chunk.js": "/smoothie/static/js/2.879a8241.chunk.js",
+    "static/js/2.879a8241.chunk.js.map": "/smoothie/static/js/2.879a8241.chunk.js.map",
     "index.html": "/smoothie/index.html",
-    "precache-manifest.0b494ec85c67e9fa49d9344a837ad924.js": "/smoothie/precache-manifest.0b494ec85c67e9fa49d9344a837ad924.js",
+    "precache-manifest.6546e4163adfa1fdb58432502ba9bd76.js": "/smoothie/precache-manifest.6546e4163adfa1fdb58432502ba9bd76.js",
     "service-worker.js": "/smoothie/service-worker.js",
     "static/css/2.1f156bdb.chunk.css.map": "/smoothie/static/css/2.1f156bdb.chunk.css.map",
-    "static/css/main.26f6c2b0.chunk.css.map": "/smoothie/static/css/main.26f6c2b0.chunk.css.map",
+    "static/css/main.4b1afdcb.chunk.css.map": "/smoothie/static/css/main.4b1afdcb.chunk.css.map",
+    "static/media/brainIcon.png": "/smoothie/static/media/brainIcon.b9892a9f.png",
+    "static/media/fitnessIcon.png": "/smoothie/static/media/fitnessIcon.b2066a9b.png",
     "static/media/headersmoothies.jpg": "/smoothie/static/media/headersmoothies.1aa33ca1.jpg",
+    "static/media/muscleIcon.png": "/smoothie/static/media/muscleIcon.120cc440.png",
     "static/media/parallaximage.jpg": "/smoothie/static/media/parallaximage.91b5fbe1.jpg",
-    "static/media/smoothiefromtop.png": "/smoothie/static/media/smoothiefromtop.5eacaddd.png",
-    "static/media/smoothieinfo.png": "/smoothie/static/media/smoothieinfo.6fb39cd0.png",
-    "static/media/stayintouchimage.jpg": "/smoothie/static/media/stayintouchimage.65384868.jpg"
+    "static/media/sleepIcon.png": "/smoothie/static/media/sleepIcon.4ce7837a.png",
+    "static/media/smoothiefromtop.png": "/smoothie/static/media/smoothiefromtop.7d3be563.png",
+    "static/media/smoothieinfo.png": "/smoothie/static/media/smoothieinfo.6fb39cd0.png"
   }
 }
