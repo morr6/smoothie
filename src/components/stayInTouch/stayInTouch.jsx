@@ -5,7 +5,8 @@ import {
   EmailInput, 
   SendButton, 
   EmailInner, 
-  EmialValidationErrorMessage} from './stayInTouch.s';
+  EmialValidationErrorMessage,
+  EmailSentMessage} from './stayInTouch.s';
 import * as LocalStorage from '../../utilities/localStorage'
 
 export class StayInTouch extends Component {
@@ -14,7 +15,8 @@ export class StayInTouch extends Component {
 
     this.state = {
       email: '',
-      isEmailValid: true
+      isEmailValid: true,
+      isEmailSent: false
     }
   }
 
@@ -32,9 +34,18 @@ export class StayInTouch extends Component {
       return isEmailValid;
   }
 
+  
+
   addEmailToStorage(email) {
-    this.validateEmail(email) && LocalStorage.addEmailToStorage(email) 
-    
+    this.validateEmail(email) &&  this.setState({isEmailSent: true})
+    this.validateEmail(email) &&  LocalStorage.addEmailToStorage(email) 
+  }
+
+  renderMessage() {
+    return this.state.isEmailSent && 
+      <EmailSentMessage>
+        Email successfully sent
+      </EmailSentMessage>
   }
 
   componentDidMount() {
@@ -42,32 +53,35 @@ export class StayInTouch extends Component {
   }
 
   render() {
-    console.log(this.state)
     return(
       <StayInTouchWrapper>
-        <Title>
-          Stay alert to our new products
-        </Title>
-        
-        <EmailInner>
-          <EmailInput 
-            placeholder='enter your email'
-            isEmailValid={this.state.isEmailValid}
-            onChange={(event) => this.getEmailFromInput(event)}
-            maxLength='40'
-          />
-          <SendButton
-            isEmailValid={this.state.isEmailValid}
-            onClick={() => this.addEmailToStorage(this.state.email)}
-          >
-            SEND
-          </SendButton>
-        </EmailInner>
-        { !this.state.isEmailValid && 
-          <EmialValidationErrorMessage>
-            *incorrect email
-          </EmialValidationErrorMessage>
-        }
+
+        { !this.state.isEmailSent ? <div>
+          <Title>
+            Stay alert to our new products
+          </Title>
+          
+          <EmailInner>
+            <EmailInput 
+              placeholder='enter your email'
+              isEmailValid={this.state.isEmailValid}
+              onChange={(event) => this.getEmailFromInput(event)}
+              maxLength='40'
+            />
+            <SendButton
+              isEmailValid={this.state.isEmailValid}
+              onClick={() => this.addEmailToStorage(this.state.email)}
+            >
+              SEND
+            </SendButton>
+          </EmailInner>
+          { !this.state.isEmailValid && 
+            <EmialValidationErrorMessage>
+              *incorrect email
+            </EmialValidationErrorMessage>
+          }
+        </div> : this.renderMessage() }
+
       </StayInTouchWrapper>
     )
   }

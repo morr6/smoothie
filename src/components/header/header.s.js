@@ -37,6 +37,7 @@ export const HeaderTitle = glamorous.div({
 })
 
 export const HeaderDescription = glamorous.div({
+  marginTop: '20px',
   fontFamily: `'Courgette', cursive`,
   fontSize: 35,
   color: color.TransparentWhiteColor,

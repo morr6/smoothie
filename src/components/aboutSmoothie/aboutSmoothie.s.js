@@ -25,7 +25,7 @@ export const MiddleBox = glamorous.div({
 
 export const SmoothieFromTop = glamorous.img({})
 
-export const AboutSmoothieTitle = glamorous.div({
+export const Title = glamorous.h1({
   fontFamily: `'Courgette', cursive`,
   color: color.TransparentWatermelonColor,
   fontSize: '50',
@@ -59,6 +59,5 @@ export const ReasonIcon =  glamorous.img({
 export const Reason = glamorous.div({
   textAlign: 'center',
   fontSize: '20',
-  fontFamily: `'Roboto Mono', monospace`,
-  
+  fontFamily: `'Roboto Mono', monospace`,  
 })

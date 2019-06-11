@@ -1,5 +1,4 @@
 import glamorous from 'glamorous';
-import * as parallaxImage from '../../assets/parallaximage.jpg'
 
 export const ParallaxWrapper = glamorous.div({
   backgroundAttachment: 'fixed',

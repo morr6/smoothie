@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { 
   AboutSmoothieWrapper,
   SmoothieFromTop, 
-  AboutSmoothieTitle,
+  Title,
   ReasonWrapper,
   ContentBox,
   ReasonIcon,
@@ -51,9 +51,9 @@ export class AboutSmoothie extends Component {
         </ContentBox>
         
         <ContentBox>
-          <AboutSmoothieTitle>
+          <Title>
             Why Smoothie Delight?
-          </AboutSmoothieTitle>
+          </Title>
           <SmoothieFromTop src={SmoothieFromTopImage} />
         </ContentBox>
 

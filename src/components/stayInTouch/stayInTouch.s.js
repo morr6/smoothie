@@ -1,6 +1,5 @@
 import glamorous from 'glamorous';
 import * as color from '../../utilities/colors'
-import * as stayInTouchBackground from '../../assets/stayintouchimage.jpg'
 
 export const StayInTouchWrapper = glamorous.div({
   display: 'flex',
@@ -70,5 +69,12 @@ export const EmialValidationErrorMessage = glamorous.div({
   color: 'red',
   width: '500px',
   textAlign: 'left'
+})
 
+export const EmailSentMessage = glamorous.div({
+  fontFamily: `'Courgette', cursive`,
+  fontSize: '55',
+  marginBottom: '50px',
+  color: color.TransparentWhiteColor,
+  WebkitTextStroke: `2px ${color.WatermelonColor}`
 })

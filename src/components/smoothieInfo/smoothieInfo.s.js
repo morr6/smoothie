@@ -17,7 +17,7 @@ export const SmoothieDescription = glamorous.div(props => {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'justify',
     fontFamily: `'Roboto Mono', monospace`,
     textAlign: 'center',
     width: '450px',
